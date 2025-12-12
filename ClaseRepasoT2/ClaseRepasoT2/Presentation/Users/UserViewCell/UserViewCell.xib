@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Xfi-0i-dwq" customClass="UserViewCell" customModule="ClaseRepasoT2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xfi-0i-dwq" id="wsx-Kt-pET">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eDy-6a-XLB">
+                        <rect key="frame" x="281" y="12" width="104" height="20"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqN-Wo-RYW">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="SDe-tA-wnL"/>
+                                    <constraint firstAttribute="width" constant="80" id="eN6-Vv-QCL"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Ver detalle"/>
+                                <connections>
+                                    <action selector="seeButtonTapped:" destination="Xfi-0i-dwq" eventType="touchUpInside" id="2Bu-JK-KXh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOH-F9-4B7">
+                                <rect key="frame" x="44" y="0.0" width="60" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="OLk-7R-phB"/>
+                                    <constraint firstAttribute="width" constant="60" id="l79-CW-JSp"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Eliminar"/>
+                                <connections>
+                                    <action selector="deleteButtonTapped:" destination="Xfi-0i-dwq" eventType="touchUpInside" id="Pdy-YH-pMe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddk-Wf-HdJ">
+                        <rect key="frame" x="24" y="22" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemIndigoColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ddk-Wf-HdJ" firstAttribute="centerY" secondItem="wsx-Kt-pET" secondAttribute="centerY" id="OxB-oO-HRA"/>
+                    <constraint firstItem="ddk-Wf-HdJ" firstAttribute="leading" secondItem="wsx-Kt-pET" secondAttribute="leading" constant="24" id="iIF-iA-h44"/>
+                    <constraint firstItem="eDy-6a-XLB" firstAttribute="centerY" secondItem="wsx-Kt-pET" secondAttribute="centerY" id="sIu-DL-YQu"/>
+                    <constraint firstAttribute="trailing" secondItem="eDy-6a-XLB" secondAttribute="trailing" constant="8" id="slD-6s-7cI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fullNameLabel" destination="ddk-Wf-HdJ" id="Vdq-LS-6U8"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
